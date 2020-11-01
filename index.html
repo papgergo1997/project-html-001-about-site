@@ -5,49 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bemutatkozás</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <h3>
             Pap Gergő amatőr webfejlesztő és természetfotós oldala
         </h3>
     </header>
 
     <nav>
-        <ul>
-            <button><li><a href="index.html">Home</a></li></button>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+        <button id="nav"><a href="index.html">Home</a></button>
+        <button id="nav"><a href="works.html">Works</a></button>
+        <button id="nav"><a href="gallery.html">Gallery</a></button>
+        <button id="nav"><a href="about.html">About</a></button>
     </nav>
-    <main>
-        <section name="home-introduction">
+    <main class="bg">
+        <section class="home-introduction">
 
             <p>
                 A nevem Pap Gergő. Amatőr webfejlesztő és természetfotós vagyok.
             </p>
         </section>
-        <section name="home-images">
-
-            <img src="/img/Gleccserholló_víz.jpg" alt="gleccserhollo">
-            <img src="/img/VÍZES TENGELIC.jpg" alt="vizestengelic">
-
+        <section class="home-images">
+           <img class="h-img" src="/img/Gleccserholló_víz.jpg" alt="gleccserhollo">
+            <img class="h-img" src="/img/VÍZES TENGELIC.jpg" alt="vizestengelic">
         </section>
-        <section name="home-boxes">
-            <div name="box1">
-                <p>Gyorsaság</p>
+        <section class="home-boxes">
+            <div class="box1">
+                <img src="/img/spedd.jpg" alt="csiga">
             </div>
-    
-            <div name="box2">
-                <p>Precizitás</p>
+
+            <div class="box2">
+                <img src="/img/precise.png" alt="precíz">
             </div>
-    
-            <div name="box3">
-                <p>Magabiztosság</p>
+
+            <div class="box3">
+                <img src="/img/magb.jpg" alt="magab">
             </div>
-    
+
         </section>
     </main>
     <footer>

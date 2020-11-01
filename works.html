@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header>
+    <header id="header">
         <h3>
             Munkáim
         </h3>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+
+        <button id="nav"><a href="index.html">Home</a></button>
+        <button id="nav"><a href="works.html">Works</a></button>
+        <button id="nav"><a href="gallery.html">Gallery</a></button>
+        <button id="nav"><a href="about.html">About</a></button>
+
     </nav>
-    <main>
-        <section name="works-projects">
-       <div>
-*\\Historian photography weboldal\\*
-       </div>
-       <div>
-Facerbook
-       </div>
-       <div>
-Gugol kereső
-       </div>
-    </section>
+    <main class="works-bg">
+        <section class="works-projects">
+            <div class="munka1">
+                <img src="/img/weboldal.jpg" alt="weboldal">
+                <span>
+                    <h3>Historian photography weboldal</h3>
+                    <p>Ez a weboldal a fotóim rendszerezésére lett létrehozva illetve teszt gyanánt.</p>
+                </span>
+            </div>
+
+            <div class="munka2">
+                <img src="/img/fészerbook.jpg" alt="facerbook">
+                <span>
+                    <h3>Facerbook</h3>
+                    <p>A Facerbook saját fejlesztésem. Különböző nemzetiségű és rasszú fészerek közösségi hálójaként hoztam létre.</p>
+                </span>
+            </div>
+
+            <div class="munka3">
+                <img src="/img/guggol.jpg" alt="böngésző">
+                <span>
+                    <h3>Guggol Króm Webböngésző</h3>
+                    <p>A méltán híres Guggol Króm webböngésző saját munkám. Egyedi villámgyors keresőmotorjának hála, felveszi a versenyt bármelyik webböngészővel.</p>
+                </span>
+            </div>
+
+        </section>
     </main>
-    
+
     <footer>
         <button><a href="#header">Vissza a lap tetejére</a></button>
     </footer>
 </body>
+
 </html>
