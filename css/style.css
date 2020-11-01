@@ -1,12 +1,4 @@
-@-ms-viewport {
-    width: device-width; }
 
-    @media screen and (max-width: 480px) {
-        html, body {
-          min-width: 320px; } }
-
-          html {
-            box-sizing: border-box; }
 
             @font-face {
                 font-family: "moderna";
@@ -127,22 +119,14 @@
                 background-color: cadetblue;
             }
 
-            .box1 {
-                display: inline-flex;
+            .box {
+                display: inline-block;
                 width: 30.33%;
                 margin-left: 2%;
+                border: none;
             }
-            .box2 {
-                display: inline-flex;
-                width: 30.33%;
-                margin-left: 2%;
-                
-            }
-            .box3 {
-                display: inline-flex;
-                width: 30.33%;
-                margin-left: 2%;
-                
-            }
-            
+          
+                            
             @media screen and (max-width:776px) { .box1, .box2, .box3 { width: 100%} }
+            
+         
