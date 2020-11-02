@@ -9,105 +9,115 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <h3>
             Rólam
         </h3>
     </header>
 
-    <nav>
-        <button id="nav"><a href="index.html">Home</a></button>
-        <button id="nav"><a href="works.html">Works</a></button>
-        <button id="nav"><a href="gallery.html">Gallery</a></button>
-        <button id="nav"><a href="about.html">About</a></button>
+    <nav id="nav-id">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
     </nav>
+
     <main>
-        <section class="about-image">
-            <img src="img/P1119310.jpg" alt="Én">
-        </section>
+
         <section>
-            <div name="mitcsineddig">
-                <ul>
-                    <article>Mivel foglalkoztam eddig</article>
+            
+            <article class="bio">
+                <img src="img/P1119310.jpg" alt="Én">
+                <aside>
+                    <h4>Mivel foglalkoztam eddig</h4>
+                    <ul>
+                        <li>
+                            Voltam már asztalos
+                        </li>
+                        <li>
+                            Napelem telepítés vezető
+                        </li>
+                        <li>
+                            Dolgoztam kalandparkban
+                        </li>
+                        <li>
+                            De alapvetően történész-muzeológus diplomával rendelkezem
+                        </li>
+                    </ul>
 
-                    <li>
-                        <p>Voltam már asztalos </p>
-                    </li>
-                    <li>
-                        <p>Napelem telepítés vezető</p>
-                    </li>
-                    <li>
-                        <p>De alapvetően történész-muzeológus diplomával rendelkezem</p>
-                    </li>
+                    <h4>Erősségeim</h4>
+                    <ol>
+                        <li>
+                            Tolerancia
+                        </li>
+                        <li>
+                            Tűrőképesség
+                        </li>
+                        <li>
+                            Egyéni és csapatmunkára való hajlam
+                        </li>
+                        <li>
+                            Kreativitás
+                        </li>
+                        <li>
+                            Kedvesség
+                        </li>
+                        <li>
+                            Sokoldalúság
+                        </li>
+                    </ol>
 
-                </ul>
-            </div>
-            <div name="erősségek">
-                <ul>
-                    <article>Erősségeim</article>
-                    <li>
-                        <p>Tolerancia</p>
-                    </li>
-                    <li>
-                        <p>Tűrőképesség</p>
-                    </li>
-                    <li>
-                        <p>Egyéni és csapatmunkára való hajlam</p>
-                    </li>
-                    <li>
-                        <p>Kreativitás</p>
-                    </li>
-                    <li>
-                        <p>Kedvesség</p>
-                    </li>
-                </ul>
-            </div>
-            <div name="hobbi">
-                <ul>
-                    <article> Hobbijaim</article>
-                    <li>
-                        <p>Túrázás</p>
-                    </li>
-                    <li>
-                        <p>Kajakozás</p>
-                    </li>
-                    <li>
-                        <p>Siklóernyőzés</p>
-                    </li>
-                    <li>
-                        <p>Természetfotózás, a kedvenc hobbim, így saját képeim láthatók a galériában.</p>
+                    <h4> Hobbijaim</h4>
+                    <ul>
+                        <li>
+                            Túrázás
+                        </li>
+                        <li>
+                            Kajakozás
+                        </li>
+                        <li>
+                            Siklóernyőzés
+                        </li>
+                        <li>
+                            Természetfotózás: a kedvenc hobbim, így saját képeimet tettem a galériában.
+                        </li>
+                        <li>
+                            Festészet
+                        </li>
+                    </ul>
+                </aside>
+            </article>
 
-                    
-                    </li>
-                </ul>
-            </div>
-            <div name="nyelvek"></div>
         </section>
+
         <section>
-            <div class="name">
-                <label for="name">Név</label>
-                <input type="name" name="name" minlength="5 karakter" required >
-            </div>
+            <form action="" class="message-form">
+                <div class="form-group">
+                    <label for="">Név</label>
+                    <input type="name" min="5" minlength="5" class="form-control" required>
+                </div>
 
-            <div class="email">
-                <label for="email">Email</label>
-                <input type="email" name="email">
-            </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
 
-            <div class="message">
-                <label for="message">Üzenet</label>
-                <input type="message" name="message" minlength="20 karakter">
-            </div>
+                <div class="form-group">
+                    <label for="">Üzenet</label>
+                    <textarea minlength="20" class="form-control" required></textarea>
+                </div>
 
-            <button>
-                Küldés
-            </button>
-
+                <button type="submit">
+                    Küldés
+                </button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <button><a href="#header">Vissza a lap tetejére</a></button>
+        <button><a href="#nav-id">Menü</a></button>
     </footer>
 </body>
 
