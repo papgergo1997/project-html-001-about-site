@@ -157,6 +157,14 @@ footer button {
     box-shadow: 0 0 9px black;
 }
 
+.message-form {
+    background-color: rgb(230, 230, 230);
+    border: solid 1px white;
+    border-radius: 5px;
+    box-shadow: 0 0 9px black;
+    width: 30%;
+}
+
 .form-group {
     width: 100px;
 }
