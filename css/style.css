@@ -12,6 +12,8 @@ body {
     padding: 0;
 }
 
+
+
 header {
     background-color: rgb(50, 50, 50);
     height: 4em;
@@ -33,14 +35,29 @@ header h3 {
 
 #nav-id ul li {
     display: inline-block;     
-    width: 24%;
-    font-family: "roboto"
+    width: 23.8%;    
+}
+
+.nav-button {
+    background-color: transparent;
+    color: inherit;
+    border-radius: 0;
+    border: 0;
+    font-family: "roboto";
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
 }
 
 section {
     padding: 1em 1em;
-    background-color: rgb(200, 200, 200);
-    border: solid 1px white;
+    background-color: transparent;
 }
 
 h4 {
@@ -117,12 +134,40 @@ footer {
 
 /* Home page*/
 
+.home-body {
+    background-color: rgb(240, 240, 240);
+    background-image: url(/img/Gleccsertó-víz.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width:510px) {
+    .home-header {
+        overflow-wrap: break-word ;
+        overflow: hidden;
+        text-overflow: clip;
+        
+    }
+} 
+
+#index-main section article {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.8);
+}
+
 .home-images img {
     width: 39%;
     margin: 5%;
     border: solid 2px black;
     border-radius: 200px;
     box-shadow: 0 0 9px black;
+}
+
+@media screen and (max-width:796px) {
+    .home-images img  {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .box {
@@ -184,6 +229,10 @@ footer {
 
 /* About page */
 
+.about-body {
+    background-image: linear-gradient(240deg, #f1f1f1 0%, #f14b23 100%);
+}
+
 .about-image img {
     width: 40%;
 }
@@ -204,6 +253,10 @@ footer {
     box-shadow: 0 0 9px black;
 }
 
+.bio aside h4 {
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.8);
+}
+
 .message-form {
     background-color: rgb(230, 230, 230);
     border: solid 1px white;
@@ -214,6 +267,7 @@ footer {
 
 .form-group {
     width: 100px;
+    margin-left: 2em;
 }
 
 .form-group textarea {
@@ -224,5 +278,10 @@ footer {
     background-color: grey;
     color: black;
     border-radius: 3px;
-    border: solid 1px white
+    border: solid 1px white;
+    margin-left: 2em;    
+}
+
+header, footer {
+    width: 100vw;
 }
